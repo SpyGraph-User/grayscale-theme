@@ -3,6 +3,16 @@
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Website</h2>
+                <p>The Jekyll version is brought to you by <a href="https://github.com/jeromelachaud">Jerome Lachaud</a></p>
+                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> 
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul>
                     <h2>Download Grayscale</h2>
                     <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
                     <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
